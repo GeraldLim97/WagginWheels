@@ -1,0 +1,8 @@
+.image-main {
+    background: url(../images/login-background-darkened.jpg) no-repeat center fixed;     
+    background-size: cover;
+}
+.image-darkened {
+    background: url(../images/login-background-darkened.jpg) no-repeat center fixed;     
+    background-size: cover;
+}

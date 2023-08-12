@@ -1,0 +1,241 @@
+/* form */
+.booking {
+  width: 600px;
+  height: 600px;
+  border: 1px solid #000;
+  background: url(https://cdn.dribbble.com/users/634508/screenshots/4934623/media/19ca872fb0e065b3236665d6a3d3f353.gif)
+    center center no-repeat;
+  background-size: cover;
+  margin: 30px auto;
+  border-radius: 20px;
+}
+.booking .form {
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+}
+.booking .form h1 {
+  color: #000;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+.booking .form input {
+  height: 40px;
+  margin-top: 5px;
+  background: rgba(62, 56, 56, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 15px;
+  color: #303936;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.booking .form ::placeholder {
+  color: #495652;
+}
+.booking .form input.animalName {
+  width: 49.5% !important;
+}
+.booking .form input[type="date"],
+input[type="time"],
+input[type="number"] {
+  width: 49.5%;
+}
+.booking .form input[type="text"] {
+  width: 100%;
+}
+.booking .form input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  outline: none;
+}
+.booking ::-webkit-input-placeholder {
+  color: #000;
+}
+.booking .form input.submit {
+  background: gold;
+  color: #444;
+  font-size: 15px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+.booking .form input[type="submit"] {
+  font-weight: 700;
+  width: 100%;
+}
+/* Radio */
+/* CONTAINERS */
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+.four {
+  width: 32.26%;
+  max-width: 32.26%;
+}
+/* COLUMNS */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+.col:first-of-type {
+  margin-left: 0;
+}
+/* CLEARFIX */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+/* FORM */
+.form .plan input,
+.form .payment-plan input,
+.form .payment-type input {
+  display: none;
+}
+.form label {
+  position: relative;
+  color: #fff;
+  background-color: #aaa;
+  font-size: 18px;
+  text-align: center;
+  height: 40px;
+  line-height: 35px;
+  display: block;
+  cursor: pointer;
+  border: 3px solid transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form .plan input:checked + label,
+.form .payment-plan input:checked + label,
+.form .payment-type input:checked + label {
+  border: 3px solid #333;
+  background-color: #2fcc71;
+}
+.form .plan input:checked + label:after,
+form .payment-plan input:checked + label:after,
+.form .payment-type input:checked + label:after {
+  content: "\2713";
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 100%;
+  border: 2px solid #333;
+  background-color: #2fcc71;
+  z-index: 0; /* change to 1> to poke out a footer */
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+/* Time & Date input */
+.booking ::-webkit-datetime-edit {
+  padding: 0.3em;
+}
+.booking ::-webkit-datetime-edit-text {
+  color: black;
+}
+.booking ::-webkit-datetime-edit-month-field {
+  color: blue;
+}
+.booking ::-webkit-datetime-edit-day-field {
+  color: green;
+}
+.booking ::-webkit-datetime-edit-year-field {
+  color: red;
+}
+/* Disable number clicker */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* Spacer */
+div.spacer {
+  height: 100px;
+}
+/* Mobile */
+@media (max-width: 650px) {
+  .booking {
+    width: 400px;
+    height: 608x;
+    background: url(https://cdn.dribbble.com/users/634508/screenshots/4934623/media/19ca872fb0e065b3236665d6a3d3f353.gif)
+    center no-repeat;
+  }
+  .booking .form input.animalName {
+    width: 100% !important;
+  }
+  .booking .form input[type="date"],
+   input[type="time"],
+   input[type="number"] {
+    width: 100%;
+  }
+  .booking .form h1 {
+    color: #000;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 650px) {
+  .booking {
+    width: 400px;
+    height: 608px;
+    background: url(https://cdn.dribbble.com/users/634508/screenshots/4934623/media/19ca872fb0e065b3236665d6a3d3f353.gif)
+    center no-repeat;
+  }
+  .booking .form input.animalName {
+    width: 100% !important;
+  }
+  .booking .form input[type="date"],
+   input[type="time"],
+   input[type="number"] {
+    width: 100%;
+  }
+  .booking .form h1 {
+    color: #000;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 376px) {
+  .booking {
+    width: 370px;
+    height: 630px;
+    background: url(https://cdn.dribbble.com/users/634508/screenshots/4934623/media/19ca872fb0e065b3236665d6a3d3f353.gif)
+    center no-repeat;
+  }
+  .booking .form input.animalName {
+    width: 100% !important;
+  }
+  .booking .form input[type="date"],
+   input[type="time"],
+   input[type="number"] {
+    width: 100%;
+  }
+  .booking .form h1 {
+    color: #000;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .form label {
+    font-size: 12px;
+  }
+}
+

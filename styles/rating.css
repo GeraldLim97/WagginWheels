@@ -1,0 +1,75 @@
+.rating-container {
+  text-align: center;
+  display: inline-block;
+}
+
+.rating {
+  border: none;
+  width: fit-content;
+  height: fit-content;
+  float: left;
+  padding-left: calc(50% - 69.5px);
+}
+
+#authForm .rating {
+  padding-left: calc(50% - 105.5px);
+}
+
+.rating > label {
+  color: black;
+  float: right;
+}
+
+.rating > label:before {
+  font-size: 2em;
+  
+  content: "★ ";
+  display: inline-block;
+}
+#authForm .rating > label:before {
+  font-size: 2em;
+}
+
+.rating > input {
+  display: none;
+}
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #31fe64;
+}
+
+.rating > input:checked + label:hover {
+  color: #38fe31;
+}
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+  color: #26f776;
+}
+
+#filter a, span#filter {
+  font-size: xx-large;
+}
+#filter a:link.checked,
+#filter a:visited.checked,
+span#filter.checked {
+  color: #31fe5d;
+  text-decoration: none;
+}
+span#filter.blank,
+#filter a:link.blank,
+#filter a:visited.blank {
+  color: black;
+  text-decoration: none;
+}
+#filter a:hover.checked,
+#filter a:hover.blank {
+  color: #26f776;
+  text-decoration: none;
+}
+
+#filter a:active {
+  color: #26f776;
+  text-decoration: underline;
+}

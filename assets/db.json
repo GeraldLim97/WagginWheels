@@ -1,0 +1,8 @@
+{
+    "db" :{
+        "servername" : "localhost",
+        "username" : "root",
+        "password" : "",
+        "name" : "wagginwheels"
+    }
+}

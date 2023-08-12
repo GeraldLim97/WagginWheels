@@ -1,0 +1,9 @@
+#Redirect Based on status code.
+ErrorDocument 403 http://localhost/wagginwheels/error/403.html
+ErrorDocument 404 http://localhost/wagginwheels/error/404.html
+Options -Indexes
+RewriteEngine On
+#disallow direct access to file extentions & folders listed.
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?(192\.168\..*|localhost) [NC] 
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?(192.\168\..*|localhost).*$ [NC] 
+RewriteRule \.(gif|jpg|png|svg|sql|json)$ - [F]

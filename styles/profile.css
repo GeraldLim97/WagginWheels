@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+.body {
+  background: #E3B23C;
+  font-family: "Open Sans", sans-serif;
+}
+
+.page h1 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1;
+  color: #423E37;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  min-height: 700px;
+  overflow: hidden;
+}
+
+.tabs-controls {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 50px 0 100px;
+  list-style-type: none;
+}
+
+.tabs-controls__link {
+  position: relative;
+  display: block;
+  padding: 16px 32px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #423E37;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.tabs-controls__link:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 0;
+  height: 4px;
+  background-color: #423E37;
+  border-radius: 2px;
+  margin: auto;
+  content: "";
+  transition: width 0.4s;
+}
+
+.tabs-controls__link--active:after {
+  width: 100%;
+}
+
+.cards-container {
+  position: relative;
+  z-index: 1;
+  width: 500px;
+  height: calc(100vh - 205px);
+  margin: 0 auto;
+}
+
+.card {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  background-color: #EDEBD7;
+  border: 1px solid #423E37;
+  box-shadow: 9px 11px 3px 0px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding: 40px;
+  transition: transform 0.3s, opacity 0.2s;
+}
+.card.hidden {
+  z-index: 100;
+  background-color: #fff;
+  color: #fff;
+  opacity: 0;
+  transition: color 0.5s, background-color 0.5s, transform 1s, opacity 0.2s 0.4s;
+}
+.card.hidden h1 {
+  color: #fff;
+  transition: color 0.5s;
+}
+.card.hidden:nth-of-type(1) {
+  transform: rotate(-79deg) translateX(101%) translateY(-34%) scale(0.9) skewX(8deg) skewY(7deg);
+}
+.card.hidden:nth-of-type(2) {
+  transform: rotate(-87deg) translateX(101%) translateY(-40%) scale(0.4) skewX(8deg) skewY(9deg);
+}
+.card.hidden:nth-of-type(3) {
+  transform: rotate(-40deg) translateX(101%) translateY(-27%) scale(0.7) skewX(10deg) skewY(1deg);
+}
+.card.hidden:nth-of-type(4) {
+  transform: rotate(-72deg) translateX(101%) translateY(-44%) scale(0.4) skewX(1deg) skewY(4deg);
+}
+.card.hidden:nth-of-type(5) {
+  transform: rotate(-14deg) translateX(101%) translateY(-10%) scale(0.2) skewX(9deg) skewY(6deg);
+}
+.card.hidden:nth-of-type(6) {
+  transform: rotate(-29deg) translateX(101%) translateY(-4%) scale(0.4) skewX(9deg) skewY(8deg);
+}
+.card:nth-of-type(1) {
+  z-index: 5;
+  transform: translateX(0px) translateY(0px);
+}
+.card:nth-of-type(2) {
+  z-index: 4;
+  transform: translateX(10px) translateY(10px);
+}
+.card:nth-of-type(3) {
+  z-index: 3;
+  transform: translateX(20px) translateY(20px);
+}
+.card:nth-of-type(4) {
+  z-index: 2;
+  transform: translateX(30px) translateY(30px);
+}
+.card:nth-of-type(5) {
+  z-index: 1;
+  transform: translateX(40px) translateY(40px);
+}
+.card:nth-of-type(6) {
+  z-index: 0;
+  transform: translateX(50px) translateY(50px);
+}
+ .card form input[type=submit] {
+    display: inline-block;
+	padding: 5px 10px;
+	border: 3px solid #000;
+	border-radius: 50px;
+	background-clip: padding-box;
+	position: relative;
+	color: #000;
+	transition: all .25s;
+	border-color: #fdbc30;
+	background: #fdbc30;
+}
+/* .card form input[type=text]{
+    color: rgb(188, 201, 222);
+    height: 25px;
+    margin-top: 5px;
+    background: rgba(62, 56, 56, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0 15px;
+    border-radius: 5px;
+    font-size: 14px;
+} */
+
+/* form */
+/* Basic styling for input elements */
+/* Container for the input with label */
+/* Container for the input with label */
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  /* Label style */
+  .input-container label {
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    font-size: 14px;
+    background-color: #EDEBD7;
+    padding: 0 5px;
+    color: #000;
+    transition: top 0.3s, font-size 0.3s;
+  }
+  
+  /* Floating label when input is focused or has value */
+  .input-container input:focus ~ label,
+  .input-container input:valid ~ label {
+    top: -22px;
+    font-size: 12px;
+  }
+  
+  /* Input style */
+  .input-container input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    /* border: none; */
+    /* border-bottom: 1px solid #ccc; */
+    background-color: transparent;
+    transition: border-color 0.3s;
+  }
+  
+  /* Line cutting through the input */
+  .input-container input:focus {
+    border-color: #4c8bf5;
+    outline: none;
+  }
+  
+  /* Placeholder text style */
+  .input-container input::placeholder {
+    color: transparent;
+  }
+  
+  /* Show placeholder text when input is focused or has value */
+  .input-container input:focus::placeholder,
+  .input-container input:valid::placeholder {
+    color: #999;
+  }
+  
+
+@media (max-width: 800px) {
+  .tabs-controls__link{
+    padding: 16px 16px;
+  }
+}
+@media (max-width: 620px) {
+  .card {
+    width: 450px;
+    height: 420px;
+  }
+  .tabs-controls__link{
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 510px) {
+  .card {
+    width: 400px;
+  }
+  .tabs-controls__link{
+    padding: 12px 8px;
+  }
+}
+@media (max-width: 440px) {
+  .card {
+    width: 380px;
+  }
+  .tabs-controls__link{
+    padding: 12px 8px;
+  }
+}
+@media (max-width: 420px) {
+  .card {
+    width: 350px;
+  }
+  .tabs-controls__link{
+    padding: 8px 8px;
+    font-size: 14px;
+  }
+}

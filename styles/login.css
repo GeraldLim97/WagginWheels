@@ -1,0 +1,219 @@
+.image-login {
+	background: url(/wagginwheels/images/login-background.jpg) no-repeat center fixed;     
+    background-size: cover;
+}
+.form-d {
+	transition: all .5s;
+	padding: 1px;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-darius {
+	width: 70%;
+	margin: 100px auto;
+	background: rgba(255, 255, 255, .5);
+	min-height: 400px;
+	display: table;
+	position: relative;
+	box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+}
+
+.form-darius>div {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #000;
+}
+
+.form-darius button, .form-darius input[type=submit] {
+	background: transparent;
+	display: inline-block;
+	padding: 10px 30px;
+	border: 3px solid #000;
+	border-radius: 50px;
+	background-clip: padding-box;
+	position: relative;
+	color: #000;
+	transition: all .25s;
+}
+
+.form-darius button.dark,.form-darius input[type=submit].dark {
+	border-color: #fdbc30;
+	background: #fdbc30;
+}
+
+.form-darius .move button.dark,input[type=submit].dark {
+	border-color: #e0b722;
+	background: #e0b722;
+}
+
+.form-darius .splits p {
+	font-size: 18px;
+}
+
+.form-darius button:active {
+	box-shadow: none;
+}
+
+.form-darius button:focus {
+	outline: none;
+}
+
+.form-darius>.wrapper {
+	position: absolute;
+	width: 40%;
+	height: 120%;
+	top: -10%;
+	left: 5%;
+	background: #FFF;
+	box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+	transition: all .5s;
+	color: #303030;
+	overflow: hidden;
+}
+
+.form-darius .wrapper>form {
+	padding: 15px 30px 30px;
+	width: 100%;
+	transition: all .5s;
+	background: #FFF;
+}
+
+.form-darius .wrapper>form:focus {
+	outline: none;
+}
+
+.form-darius .wrapper #login {
+	padding-top: 20%;
+	visibility: visible;
+}
+
+.form-darius .wrapper #register {
+	transform: translateY(-80%) translateX(100%);
+	visibility: hidden;
+}
+
+.form-darius .wrapper.move #register {
+	transform: translateY(-80%) translateX(0%);
+	visibility: visible;
+}
+
+.form-darius .wrapper.move #login {
+	transform: translateX(-100%);
+	visibility: hidden;
+}
+
+.form-darius .wrapper>form>div {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.form-darius .wrapper label {
+	position: absolute;
+	top: -7px;
+	font-size: 12px;
+	white-space: nowrap;
+	background: #FFF;
+	text-align: left;
+	left: 15px;
+	padding: 0 5px;
+	color: #999;
+	pointer-events: none;
+}
+
+.form-darius .wrapper h3 {
+	margin-bottom: 25px;
+}
+
+.form-darius .wrapper input {
+	height: 40px;
+	padding: 5px 15px;
+	width: 100%;
+	border: solid 1px #999;
+}
+
+.form-darius .wrapper input {
+	height: 40px; padding: 5px 15px;
+	width: 100%;
+	border: solid 1px #999;
+}
+
+.form-darius .wrapper input:focus {
+	outline: none;
+	border-color: #fdbc30;
+}
+
+.form-darius>.wrapper.move {
+	left: 45%;
+}
+
+.form-darius>.wrapper.move input:focus {
+	border-color: #e0b722;
+}
+/* .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > li > button  {
+	color: #9d9d9d
+} */
+@media (max-width: 767px) {
+	.form-darius {
+		padding: 5px;
+		margin: 0;
+		width: 100%;
+		display: block;
+	}
+
+	.form-darius>.wrapper {
+		position: relative;
+		height: auto;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	.form-darius>div {
+		display: inline-block;
+	}
+
+	.splits {
+		width: 50%;
+		background: #FFF;
+		float: left;
+	}
+
+	.splits button {
+		width: 100%;
+		border-radius: 0;
+		background: #505050;
+		border: 0;
+		opacity: .7;
+	}
+
+	.splits button.active {
+		opacity: 1;
+	}
+
+	.splits button.active {
+		opacity: 1;
+		background: #fdbc30;
+	}
+
+	.splits.rgstr-btn button.active {
+		background: #e0b722;
+	}
+
+	.splits p {
+		display: none;
+	}
+
+	.form-darius>.wrapper.move {
+		left: 0%;
+	}
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+	box-shadow: inset 0 0 0 50px #000
+}
